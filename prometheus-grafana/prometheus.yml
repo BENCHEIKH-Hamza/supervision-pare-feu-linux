@@ -1,0 +1,10 @@
+# /etc/prometheus/prometheus.yml — Machine 5 (10.0.0.200)
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'pare-feu'
+    static_configs:
+      - targets: ['10.0.0.1:9100']
+        labels:
+          instance: 'pare-feu-linux'

@@ -1,0 +1,12 @@
+# /etc/netplan/00-installer-config.yaml — Machine 1 (Pare-feu)
+# enp0s3 = WAN (DHCP) | enp0s8 = LAN (10.0.0.1/24)
+# Appliquer avec : sudo netplan apply
+network:
+  version: 2
+  ethernets:
+    enp0s3:
+      dhcp4: true
+    enp0s8:
+      dhcp4: false
+      addresses:
+        - 10.0.0.1/24

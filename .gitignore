@@ -1,0 +1,19 @@
+# Machines virtuelles (trop lourdes pour GitHub)
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+*.vbox
+*.vbox-prev
+
+# Secrets
+*.key
+*.pem
+*.env
+secrets/
+*password*
+
+# Divers
+logs/*.log
+.DS_Store
+Thumbs.db

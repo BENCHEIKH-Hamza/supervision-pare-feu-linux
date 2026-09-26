@@ -1,0 +1,14 @@
+# Exemple pour une machine du LAN (ici Machine 4 — Zabbix, 10.0.0.100)
+# Adapter l'adresse pour les autres machines (.10, .20, .150, .200)
+network:
+  version: 2
+  ethernets:
+    enp0s3:
+      dhcp4: false
+      addresses:
+        - 10.0.0.100/24
+      routes:
+        - to: default
+          via: 10.0.0.1
+      nameservers:
+        addresses: [8.8.8.8, 1.1.1.1]

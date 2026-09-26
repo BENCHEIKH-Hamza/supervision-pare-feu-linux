@@ -1,0 +1,4 @@
+# Extrait de /etc/zabbix/zabbix_server.conf — Machine 4 (10.0.0.100)
+DBName=zabbix
+DBUser=zabbix
+DBPassword=CHANGE_ME

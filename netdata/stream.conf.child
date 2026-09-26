@@ -1,0 +1,5 @@
+# /etc/netdata/stream.conf — Machine 1 (Pare-feu), nœud ENFANT
+[stream]
+    enabled = yes
+    destination = 10.0.0.150:19999
+    api key = 11111111-2222-3333-4444-555555555555

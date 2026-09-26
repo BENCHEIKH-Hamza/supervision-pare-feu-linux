@@ -1,0 +1,5 @@
+# Extrait de /etc/zabbix/zabbix_agentd.conf — Machine 1 (Pare-feu)
+# Installation : sudo apt install zabbix-agent -y
+Server=10.0.0.100
+ServerActive=10.0.0.100
+Hostname=Par-feu

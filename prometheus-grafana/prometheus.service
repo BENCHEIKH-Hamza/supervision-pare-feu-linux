@@ -1,0 +1,14 @@
+# /etc/systemd/system/prometheus.service — Machine 5
+[Unit]
+Description=Prometheus
+After=network.target
+
+[Service]
+User=prometheus
+ExecStart=/usr/local/bin/prometheus \
+  --config.file=/etc/prometheus/prometheus.yml \
+  --storage.tsdb.path=/var/lib/prometheus/
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

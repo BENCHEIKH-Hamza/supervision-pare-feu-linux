@@ -1,0 +1,7 @@
+# /etc/netdata/stream.conf — Machine 6 (10.0.0.150), nœud PARENT
+# Générer votre propre clé avec : uuidgen
+[11111111-2222-3333-4444-555555555555]
+    enabled = yes
+    history = 3600
+    default memory mode = ram
+    health enabled by default = auto
